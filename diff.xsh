@@ -27,7 +27,9 @@ def difftex(old):
     files -= {
         'authors.tex',
         'coverletter.tex',
+        'coverletter2.tex',
         'rebuttal.tex',
+        'rebuttal2.tex',
         }
     new_files = {
         'assumptions.tex',
