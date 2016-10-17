@@ -1,0 +1,36 @@
+\documentclass[answers,12pt]{exam}
+\usepackage{xcolor}
+
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+\externaldocument[P-]{paper}
+\externaldocument[S-]{supplement}
+
+\usepackage{upquote}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+
+\usepackage{pdfpages}
+
+\hypersetup{
+  colorlinks=true,
+  filecolor=black, % color of cross-file links. Black because they only work
+                   % if the paper sits alongside the rebuttal as "paper.pdf".
+  urlcolor=blue % color of external links
+}
+
+\unframedsolutions
+\shadedsolutions
+\renewcommand{\solutiontitle}{}
+
+\begin{document}
+
+\includepdf{coverletter2.pdf}
+
+\section{Comments from Editor}
+
+% \begin{questions}
+%
+% \end{questions}
+
+\end{document}
