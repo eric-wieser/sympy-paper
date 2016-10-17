@@ -10,7 +10,7 @@ paper.pdf: paper.tex authors.tex introduction.tex architecture.tex features.tex 
 diff: paper-diff.pdf supplement-diff.pdf
 
 paper-diff.tex: supplement.pdf paper.pdf diff.xsh
-	./diff.xsh PeerJ-version-3
+	./diff.xsh PeerJ-version-4-resubmit
 
 supplement-diff.pdf: paper-diff.tex supplement-diff.bbl
 	pdflatex -shell-escape --halt-on-error supplement-diff.tex
