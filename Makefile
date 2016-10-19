@@ -58,4 +58,4 @@ test:
 clean:
 	(rm -rf *.ps *.log *.dvi *.aux *.*% *.lof *.lop *.lot *.toc *.idx *.ilg *.ind *.bbl *.blg *.cpt *-diff.tex *.out)
 	(rm -rf authors.tex pprint.pdf paper.pdf supplement.pdf rebuttal.pdf coverletter.pdf coverletter2.pdf rebuttal2.pdf paper-diff.pdf supplement-diff.pdf)
-	(rm -rf __pycache__ authors/authors.md test_full_paper.py)
+	(rm -rf __pycache__ test_full_paper.py)
