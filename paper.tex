@@ -15,7 +15,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[scaled=0.8]{DejaVuSansMono}
 
-\usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage[all]{xy}
 \usepackage{amsmath}
@@ -28,10 +27,17 @@
 \usepackage{amsmath}
 \usepackage{url}
 
+% Order matters here
+\usepackage{xr-hyper}
+\usepackage{hyperref}
+\externaldocument[S-]{supplement}
+
 \hypersetup{
   colorlinks=true,
   urlcolor=blue,
-  citecolor=black
+  citecolor=black,
+  filecolor=black % cross-file links, which do not actually work unless the
+                  % supplement is named supplement.pdf
 }
 
 % for nice units
