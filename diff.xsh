@@ -53,7 +53,7 @@ def difftex(old):
     cwd = os.path.abspath(os.path.dirname($ARG0))
     cd /tmp/paper-diff
     git checkout @(old)
-    make
+    make paper.pdf supplement.pdf
     cp /tmp/paper-diff/paper.bbl @(os.path.join(cwd, 'paper-' + old + '.bbl'))
     cp /tmp/paper-diff/supplement.bbl @(os.path.join(cwd, 'supplement-' + old + '.bbl'))
     cd @(cwd)
