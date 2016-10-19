@@ -31,11 +31,7 @@ def difftex(old):
         'rebuttal.tex',
         'rebuttal2.tex',
         }
-    new_files = {
-        'assumptions.tex',
-        'basic_usage.tex',
-        'projects_that_depend_on_sympy.tex',
-        }
+    new_files = set()
     for f in files:
         print('diffing ' + f)
         fbase, fext = os.path.splitext(f)
