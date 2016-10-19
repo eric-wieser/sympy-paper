@@ -1,8 +1,8 @@
-SymPy has equation solvers that can handle ordinary differential
-equations, recurrence relationships, Diophantine equations\footnote{See the
-  supplementary material for an in depth discussion on the Diophantine submodule.}, and algebraic
-equations. There is also
-rudimentary support for simple partial differential equations.
+SymPy has equation solvers that can handle ordinary differential equations,
+recurrence relationships, Diophantine equations\footnote{See
+  section~\ref{S-suppsec:Dioph} of the supplementary material for an in depth
+  discussion on the Diophantine submodule.}, and algebraic equations. There is
+also rudimentary support for simple partial differential equations.
 
 There are two functions for solving algebraic equations in SymPy:
 \texttt{solve} and \texttt{solveset}.
@@ -18,9 +18,10 @@ solve(f, *symbols, **flags)
 solveset(f, symbol, domain=S.Complexes)
 \end{verbatim}
 The \texttt{domain} parameter can be any set from the \texttt{sympy.sets}
-module (see the supplementary material for details on \texttt{sympy.sets}),
-but is typically either \texttt{S.Complexes} (the
-default) or \texttt{S.Reals}; the latter causes \texttt{solveset} to only return real solutions.
+module (see section~\ref{S-suppsec:Sets} of the supplementary material for
+details on \texttt{sympy.sets}), but is typically either \texttt{S.Complexes}
+(the default) or \texttt{S.Reals}; the latter causes \texttt{solveset} to only
+return real solutions.
 
 An important difference between the two functions is that the output API of \texttt{solve}
 varies with input (sometimes returning a Python list and sometimes a Python dictionary) whereas
@@ -35,5 +36,5 @@ instance, \texttt{solveset(x - 1, x)} solves $x - 1 = 0$ for $x$.
 \texttt{solve} that are not yet implemented in \texttt{solveset}, including
 multivariate systems, and some transcendental equations.
 
-Some examples for \texttt{solveset} and \texttt{solve} can be found in the
-supplement.
+Some examples for \texttt{solveset} and \texttt{solve} can be found in
+section~\ref{S-suppsec:examples} of the supplementary material.
