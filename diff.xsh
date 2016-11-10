@@ -27,13 +27,11 @@ def difftex(old):
     files -= {
         'authors.tex',
         'coverletter.tex',
+        'coverletter2.tex',
         'rebuttal.tex',
+        'rebuttal2.tex',
         }
-    new_files = {
-        'assumptions.tex',
-        'basic_usage.tex',
-        'projects_that_depend_on_sympy.tex',
-        }
+    new_files = set()
     for f in files:
         print('diffing ' + f)
         fbase, fext = os.path.splitext(f)
@@ -55,7 +53,7 @@ def difftex(old):
     cwd = os.path.abspath(os.path.dirname($ARG0))
     cd /tmp/paper-diff
     git checkout @(old)
-    make
+    make paper.pdf supplement.pdf
     cp /tmp/paper-diff/paper.bbl @(os.path.join(cwd, 'paper-' + old + '.bbl'))
     cp /tmp/paper-diff/supplement.bbl @(os.path.join(cwd, 'supplement-' + old + '.bbl'))
     cd @(cwd)

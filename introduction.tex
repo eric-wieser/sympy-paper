@@ -28,7 +28,7 @@ itself is used both for the internal implementation and end user
 interaction. By using the operator overloading functionality of Python, SymPy follows the embedded domain specific language paradigm proposed by Hudak~\cite{dsl-little-languages}.  The exclusive usage of a single programming language makes it easier
 for people already familiar with that language to use or develop SymPy.
 Simultaneously, it enables developers to focus on mathematics, rather than
-language design.  SymPy officially supports Python 2.6, 2.7 and 3.2--3.5.
+language design.  SymPy version 1.0 officially supports Python 2.6, 2.7 and 3.2--3.5.
 
 SymPy is designed with a strong focus on usability as a library.
 Extensibility is important in its application program interface
@@ -54,6 +54,18 @@ architecture of SymPy. Section~\ref{sec:other-proj} looks at a selection of
 packages that depend on SymPy. Conclusions and future directions for SymPy are given
 in section~\ref{sec:conclusion}. All examples in this paper use SymPy version
 1.0 and mpmath version 0.19.
+
+Additionally, the supplementary material takes a deeper look at a few SymPy
+topics. Supplement section~\ref{S-suppsec:Gruntz} discusses the Gruntz
+algorithm, which SymPy uses to calculate symbolic limits.
+Sections~\ref{S-suppsec:Series}--\ref{S-suppsec:numsimpl} of the supplement
+discuss the series, logic, Diophantine equations, sets, statistics, category
+theory, tensor, and numerical simplification submodules of SymPy,
+respectively. Supplement section~\ref{S-suppsec:examples} provides additional
+examples for topics discussed in the main paper. Supplement
+section~\ref{S-suppsec:sympy-gamma} discusses the SymPy Gamma project.
+Finally, section~\ref{S-suppsec:comp-mma} of the supplement contains a brief
+comparison of SymPy with Wolfram Mathematica.
 
 The following statement imports all SymPy functions into the global Python
 namespace.\footnote{\texttt{import *} has been used here to aid the

@@ -133,7 +133,8 @@ Instances of \texttt{Expr} typically represent complex numbers, but may also
 include other ``rings'', like matrix expressions. Not all SymPy classes are
 subclasses of \texttt{Expr}. For instance, logic expressions, such as
 \verb|And(x, y)|, are subclasses of \texttt{Basic} but not of
-\texttt{Expr}.\footnote{See the supplement for more information on the
+\texttt{Expr}.\footnote{See section~\ref{S-suppsec:Logic} of the supplementary
+  material for more information on the
   \texttt{sympy.logic} submodule.}
 
 The \texttt{Function} class is a subclass of \texttt{Expr} which makes it
@@ -203,7 +204,7 @@ above listing, such as evaluation at rational points and series expansion.
 \label{sec:performance}
 
 Due to being written in pure Python without the use of extension modules,
-SymPy's performance characteristics are generally poorer than
+SymPy's performance characteristics are generally poorer than that of
 its commercial competitors. For many applications,
 the performance of SymPy, as measured by clock cycles, memory usage, and memory
 layout, is sufficient.
@@ -218,7 +219,7 @@ characteristics for symbolic manipulation. SymEngine is a pure C++ library,
 which allows it fine-grained control over the memory layout of expressions.
 SymEngine has thin wrappers to other languages (Python, Ruby,
 Julia, etc.). Its aim is to be the fastest symbolic manipulation library. Preliminary
-benchmarks suggest that SymEngine is as performant as its commercial and
+benchmarks suggest that SymEngine performs as well as its commercial and
 open source competitors.
 
 The development version of SymPy has recently started to use SymEngine as an

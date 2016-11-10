@@ -2,10 +2,12 @@ SymPy provides all the basic operations of calculus, such as calculating
 limits, derivatives, integrals, or summations.
 
 Limits are computed with the \verb|limit| function, using the Gruntz
-algorithm~\cite{Gruntz1996limits} for computing symbolic limits and heuristics (a description of the Gruntz algorithm may be found in the supplement).
+algorithm~\cite{Gruntz1996limits} for computing symbolic limits and heuristics
+(a description of the Gruntz algorithm may be found in
+section~\ref{S-suppsec:Gruntz} of the supplementary material).
 For example, the following computes
 $\lim\limits_{x\to \infty} x\sin(\frac{1}{x})=1$. Note that SymPy denotes
-$\infty$ as \verb|oo|.
+$\infty$ as \verb|oo| (two lower case ``\verb|o|''s).
 \begin{verbatim}
 >>> limit(x*sin(1/x), x, oo)
 1
@@ -62,11 +64,10 @@ Series expansions are computed with the \verb|series| function. This example com
 >>> series(sin(x), x, 0, 6)
 x - x**3/6 + x**5/120 + O(x**6)
 \end{verbatim}
-The supplementary material discusses series expansions methods in more depth.
-
-Integrals, derivatives, summations, products, and limits that cannot be
-computed return unevaluated objects. These can also be created directly if the
-user chooses.
+Section~\ref{S-suppsec:Series} of the supplementary material discusses series
+expansions methods in more depth. Integrals, derivatives, summations,
+products, and limits that cannot be computed return unevaluated objects. These
+can also be created directly if the user chooses.
 \begin{verbatim}
 >>> integrate(x**x, x)
 Integral(x**x, x)
