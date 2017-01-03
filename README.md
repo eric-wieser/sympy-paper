@@ -2,7 +2,42 @@
 
 This is the source repository for the paper:
 
-> SymPy Authors, "SymPy: Symbolic Computing in Python", 2016.
+**SymPy: symbolic computing in python**
+
+This paper has been published in PeerJ Computer Science and can be found at
+https://peerj.com/articles/cs-103/.
+
+To cite this paper, please use
+
+> Meurer A, Smith CP, Paprocki M, Čertík O, Kirpichev SB, Rocklin M, Kumar A,
+Ivanov S, Moore JK, Singh S, Rathnayake T, Vig S, Granger BE, Muller RP,
+Bonazzi F, Gupta H, Vats S, Johansson F, Pedregosa F, Curry MJ, Terrel AR,
+Roučka Š, Saboo A, Fernando I, Kulal S, Cimrman R, Scopatz A. (2017) SymPy:
+symbolic computing in Python. *PeerJ Computer Science* 3:e103
+https://doi.org/10.7717/peerj-cs.103
+
+Here is the BibTeX entry.
+
+```
+@article{10.7717/peerj-cs.103,
+ title = {SymPy: symbolic computing in Python},
+ author = {Meurer, Aaron and Smith, Christopher P. and Paprocki, Mateusz and Čertík, Ondřej and Kirpichev, Sergey B. and Rocklin, Matthew and Kumar, AMiT and Ivanov, Sergiu and Moore, Jason K. and Singh, Sartaj and Rathnayake, Thilina and Vig, Sean and Granger, Brian E. and Muller, Richard P. and Bonazzi, Francesco and Gupta, Harsh and Vats, Shivam and Johansson, Fredrik and Pedregosa, Fabian and Curry, Matthew J. and Terrel, Andy R. and Roučka, Štěpán and Saboo, Ashutosh and Fernando, Isuru and Kulal, Sumith and Cimrman, Robert and Scopatz, Anthony},
+ year = 2017,
+ month = jan,
+ keywords = {Python, Computer algebra system, Symbolics},
+ abstract = {
+            SymPy is an open source computer algebra system written in pure Python. It is built with a focus on extensibility and ease of use, through both interactive and programmatic applications. These characteristics have led SymPy to become a popular symbolic library for the scientific Python ecosystem. This paper presents the architecture of SymPy, a description of its features, and a discussion of select submodules. The supplementary material provide additional examples and further outline details of the architecture and features of SymPy.
+         },
+ volume = 3,
+ pages = {e103},
+ journal = {PeerJ Computer Science},
+ issn = {2376-5992},
+ url = {https://doi.org/10.7717/peerj-cs.103},
+ doi = {10.7717/peerj-cs.103}
+}
+```
+
+You may also download other citation formats at the above URL.
 
 This repository contains or links to all of the information needed to reproduce
 the results in the paper.
